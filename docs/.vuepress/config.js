@@ -460,6 +460,28 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
+            title: '第十二章文件访问',
+            collapsable: false,
+            children: [
+                'file/0',
+                'file/1',
+                'file/2',
+                'file/3',
+                'file/4',
+            ]
+        },
+        {
+            title: '第十三章SQL 注入',
+            collapsable: false,
+            children: [
+                'sql/0',
+                'sql/1',
+                'sql/2',
+                'sql/3',
+                'sql/4',
+            ]
+        },
+        {
             title: '第十四章外部实体注入XXE',
             collapsable: false,
             children: [
@@ -467,6 +489,42 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
                 'xxe/1',
                 'xxe/2',
                 'xxe/3',
+                'xxe/4',
+            ]
+        },
+        {
+            title: '第十五章服务端请求伪造SSRF',
+            collapsable: false,
+            children: [
+                'ssrf/0',
+                'ssrf/1',
+                'ssrf/2',
+                'ssrf/3',
+                'ssrf/4',
+            ]
+        },
+        {
+            title: '第十六章反序列化',
+            collapsable: false,
+            children: [
+                'deserialization/0',
+                'deserialization/1',
+                'deserialization/2',
+                'deserialization/3',
+                'deserialization/4',
+                'deserialization/5',
+            ]
+        }
+        ,
+        {
+            title: '第十七章HTTP请求',
+            collapsable: false,
+            children: [
+                'http/0',
+                'http/1',
+                'http/2',
+                'http/3',
+                'http/4',
             ]
         }
     ]
