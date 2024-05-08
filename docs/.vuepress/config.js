@@ -403,7 +403,10 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             children: [
                 'javaagent/0',
                 'javaagent/1',
-                'javaagent/2'
+                'javaagent/2',
+                'javaagent/3',
+                'javaagent/4',
+                'javaagent/5',
             ]
         },
         {
