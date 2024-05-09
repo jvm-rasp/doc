@@ -184,10 +184,7 @@ module.exports = {
                     '/guide/': getGuideSidebar('概述', '安装', '深入', '案例', 'FAQ', '故障'),
                     '/case/': getCaseSidebar('命令执行', '表达式注入', '反序列化', 'SQL注入', '文件访问', '外部实体注入'),
                     '/algorithm/': getAlgorithmSidebar('命令执行', 'SQL注入', 'XXE', '线程注入'),
-                    '/book/': getBookSidebar('本书序言与推荐', '第一章背景介绍', '第二章字节码指令简介', '第三章Attach技术', '第四章类加载器',
-                        '第五章线程变量', '第六章Java Agent', '第七章性能诊断工具',
-                        '第八章RASP实现原理', '第九章命令执行', '第十章表达式执行'
-                    )
+                    '/book/': getBookSidebar()
                 }
             }
         }
@@ -341,29 +338,40 @@ function getCaseSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
     ]
 }
 
-function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE, groupF, groupG, groupH, groupH2) {
+function getBookSidebar() {
     return [
         {
-            title: group0,
+            title: '本书序言与推荐',
             collapsable: false,
             children: [
                 'recommendation/0',
             ]
         },
         {
-            title: groupA,
+            title: '第一章背景介绍',
             collapsable: false,
             children: [
+                'preface/0',
                 'preface/1',
+                'preface/2',
+                'preface/3',
+                'preface/4',
+                'preface/5',
+                'preface/6'
             ]
         },
         {
-            title: groupA1,
+            title: '第二章字节码指令简介',
             collapsable: false,
-            children: []
+            children: [
+                'bytecode/0',
+                'bytecode/1',
+                'bytecode/2',
+                'bytecode/3',
+            ]
         },
         {
-            title: groupB,
+            title: '第三章Attach技术',
             collapsable: false,
             children: [
                 'attach/0',
@@ -374,7 +382,7 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupC,
+            title: '第四章类加载器',
             collapsable: false,
             children: [
                 'classloader/0',
@@ -387,7 +395,7 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupD,
+            title: '第五章线程变量',
             collapsable: false,
             children: [
                 'threadlocal/0',
@@ -398,7 +406,7 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupE,
+            title: '第六章Java Agent',
             collapsable: false,
             children: [
                 'javaagent/0',
@@ -410,7 +418,7 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupF,
+            title: '第七章性能诊断工具',
             collapsable: false,
             children: [
                 'tools/0',
@@ -425,12 +433,12 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupG,
+            title: '第八章RASP实现原理',
             collapsable: false,
             children: []
         },
         {
-            title: groupH,
+            title: '第九章命令执行',
             collapsable: false,
             children: [
                 'rce/0',
@@ -441,7 +449,7 @@ function getBookSidebar(group0, groupA, groupA1, groupB, groupC, groupD, groupE,
             ]
         },
         {
-            title: groupH2,
+            title: '第十章表达式执行',
             collapsable: false,
             children: [
                 'expression/0',
