@@ -435,7 +435,14 @@ function getBookSidebar() {
         {
             title: '第八章RASP实现原理',
             collapsable: false,
-            children: []
+            children: [
+                'rasp/0',
+                'rasp/1',
+                'rasp/2',
+                'rasp/3',
+                'rasp/4',
+                'rasp/5',
+            ]
         },
         {
             title: '第九章命令执行',
